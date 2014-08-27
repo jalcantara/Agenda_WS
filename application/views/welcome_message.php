@@ -69,6 +69,27 @@ code {
 <p><br />Page rendered in {elapsed_time} seconds</p>
 
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<div>
+	<h2>Login POST</h2>
+	<form action="<?php echo base_url();?>users/login/format/json" method='POST'>
+		<input name="username" />
+		<input name="password" />
+		<button type="submit">Aceptar</button>
+	</form>
 
+</div>
+<div>
+	<h2>Crear usuario POST</h2>
+	<form action="<?php echo base_url();?>users/create_user/format/json" method='POST'>
+	<label>Usuario</label>
+		<input name="username" />
+		<label>Password</label>
+		<input name="password" />
+		<label>Email</label>
+		<input name="email" />
+		<button type="submit">Aceptar</button>
+	</form>
+
+</div>
 </body>
 </html>
