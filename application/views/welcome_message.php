@@ -50,19 +50,15 @@ code {
 <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 <ul>
-
-	<li><a href="<?php echo base_url();?>api/users/format/json">Users </a> - get it in JSON</li>
-	<li><a href="<?php echo site_url('api/users');?>">Users</a> - defaulting to XML</li>
-
 	<li><a href="<?php echo base_url();?>cualidad/cualidades/format/json">Click </a>Lista de Cualidades</li>
 	
-	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia/format/json">Click </a>Cualidad Dia</li>
+	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia/fecha/01/01/2015/format/json">Click </a>Cualidad del Día 01/01/2015</li>
 
-	<li><a href="<?php echo base_url();?>cualidad_dia/pensamiento/format/json">Click </a>Cualidad Pensamiento</li>
+	<li><a href="<?php echo base_url();?>cualidad_dia/pensamiento/fecha/01/01/2015/format/json">Click </a>Pensamiento del día 01/01/2015</li>
 
-	<li><a href="<?php echo base_url();?>cualidad_libro/librocualidad/format/json">Click </a>Cualidad Libro</li>
+	<li><a href="<?php echo base_url();?>cualidad_libro/lista_libro_bycualidad/id/1/format/json">Click </a>Lista de libros por cualidad</li>
 	
-	<li><a href="<?php echo base_url();?>cualidad_libro/libro/format/json">Click </a>Libro</li>
+	<li><a href="<?php echo base_url();?>libro/libro_byid/id/8/format/json">Click </a>Descripción de libro por ID</li>
 
 </ul>
 
@@ -72,7 +68,9 @@ code {
 <div>
 	<h2>Login POST</h2>
 	<form action="<?php echo base_url();?>users/login/format/json" method='POST'>
+		<label>Usuario</label>
 		<input name="username" />
+		<label>Password</label>
 		<input name="password" />
 		<button type="submit">Aceptar</button>
 	</form>
@@ -81,7 +79,7 @@ code {
 <div>
 	<h2>Crear usuario POST</h2>
 	<form action="<?php echo base_url();?>users/create_user/format/json" method='POST'>
-	<label>Usuario</label>
+		<label>Usuario</label>
 		<input name="username" />
 		<label>Password</label>
 		<input name="password" />

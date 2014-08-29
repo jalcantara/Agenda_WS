@@ -11,17 +11,10 @@ class cualidad_libro_model extends CI_Model
 		parent::__construct();
 	}
 
-	public function get_lista_librocualidad_all()
+	public function get_lista_libro_bycualidad($id)
 	{
-		$query = $this ->db->query ('select * from get_lista_librocualidad_all;');
+		$query = $this ->db->query ('select * from get_lista_librocualidad_all where cualidad_id='.$id);
 		return $query -> result_array();
 	}
-
-	public function get_lista_libro_all()
-	{
-		$query = $this ->db->query ('select * from get_lista_libro_all;');
-		return $query -> result_array();
-	}
-
 }
  ?>
