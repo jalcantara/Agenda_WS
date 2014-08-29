@@ -72,6 +72,7 @@ code {
 		<input name="username" />
 		<label>Password</label>
 		<input name="password" />
+		<input name="tipo" value="1" hidden/>
 		<button type="submit">Aceptar</button>
 	</form>
 
@@ -85,6 +86,7 @@ code {
 		<input name="password" />
 		<label>Email</label>
 		<input name="email" />
+		<input name="tipo" value="1" hidden/>
 		<button type="submit">Aceptar</button>
 	</form>
 

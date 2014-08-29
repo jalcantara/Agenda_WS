@@ -18,7 +18,7 @@ class users extends REST_Controller
         
         $username=$this->post('username');
         $password=$this->post('password');
-        $tipo=1;
+        $tipo=$this->post('tipo');
 
         if($tipo&&intval($tipo)==1){
             if($username&&$password){
@@ -51,7 +51,7 @@ class users extends REST_Controller
         $username=$this->post('username');
         $password=$this->post('password');
         $email=$this->post('email');
-        $tipo=1;
+        $tipo=$this->post('tipo');
 
         if($tipo&&intval($tipo)==1){
             if($username&&$password&&$email){
