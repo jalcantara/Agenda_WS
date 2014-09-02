@@ -63,10 +63,10 @@ class users extends REST_Controller
                 );
 
                 if ($user_id === FALSE)                    
-                    $this->response(array('greeting' => 'Registro incorrecto'), 404); 
+                    $this->response(array('error' => 'Registro incorrecto'), 404); 
                 else
                 {
-                    $this->response(array('success' => 'Registro correcto'), 201);                   
+                    $this->response(array('success' => 'Registro correcto'), 200);                   
                 }
                
             }else{

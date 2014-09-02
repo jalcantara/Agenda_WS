@@ -13,13 +13,13 @@ class cualidad_dia_model extends CI_Model
 
 	public function get_lista_cualidaddia_all($fecha)
 	{
-		$query = $this ->db->query ('select * from get_lista_cualidadversiculoplan_all where fecha = '.$fecha);
+		$query = $this ->db->query ("select * from get_lista_cualidadversiculoplan_all where fecha='".$fecha."'");
 		return $query -> result_array();
 	}
 	
 	public function get_lista_pensamiento_all($fecha)
 	{
-		$query = $this ->db->query ('select * from get_lista_pensamiento_all where fecha = '.$fecha);
+		$query = $this ->db->query ("select * from get_lista_pensamiento_all where fecha='".$fecha."'");
 		return $query -> result_array();
 	}
 

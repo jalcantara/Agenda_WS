@@ -52,9 +52,9 @@ code {
 <ul>
 	<li><a href="<?php echo base_url();?>cualidad/cualidades/format/json">Click </a>Lista de Cualidades</li>
 	
-	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia/fecha/01/01/2015/format/json">Click </a>Cualidad del Día 01/01/2015</li>
+	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia/fecha/01-01/format/json">Click </a>Cualidad del Día 01/01 dd/MM</li>
 
-	<li><a href="<?php echo base_url();?>cualidad_dia/pensamiento/fecha/01/01/2015/format/json">Click </a>Pensamiento del día 01/01/2015</li>
+	<li><a href="<?php echo base_url();?>cualidad_dia/pensamiento/fecha/01-01/format/json">Click </a>Pensamiento del día 01/01 dd/MM</li>
 
 	<li><a href="<?php echo base_url();?>cualidad_libro/lista_libro_bycualidad/id/1/format/json">Click </a>Lista de libros por cualidad</li>
 	
