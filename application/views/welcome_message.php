@@ -59,7 +59,8 @@ code {
 	<li><a href="<?php echo base_url();?>cualidad_libro/lista_libro_bycualidad/id/1/format/json">Click </a>Lista de libros por cualidad</li>
 	
 	<li><a href="<?php echo base_url();?>libro/libro_byid/id/8/format/json">Click </a>Descripción de libro por ID</li>
-
+	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje/fecha/01-01-2015/usuario/1/puntaje/5/cualidad/1/format/json">Click </a>Puntaje Cualidad con procedimiento y vuelta de data</li>
+	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje_activerecord/fecha/01-01-2015/usuario/1/puntaje/5/cualidad/1/format/json">Click </a>Puntaje Cualidad Active Record, solo inserción</li>
 </ul>
 
 <p><br />Page rendered in {elapsed_time} seconds</p>
