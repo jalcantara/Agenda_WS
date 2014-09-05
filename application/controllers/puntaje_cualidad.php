@@ -16,12 +16,10 @@ class puntaje_cualidad extends REST_Controller
         $fecha = $fecha->format('Y-m-d');
         $usuario = $this->get('usuario');
         $puntaje = $this->get('puntaje');
-        $cualidad = $this->get('cualidad');
         $data = array(
             'dat_fecha' => $fecha, 
             'usuario_id' => $usuario,
-            'dec_puntaje' => $puntaje,
-            'cualidad_id' => $cualidad);
+            'dec_puntaje' => $puntaje);
 
         $puntaje_cualidad = $this->cl->get_puntaje($data);
         

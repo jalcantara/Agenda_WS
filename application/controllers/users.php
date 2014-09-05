@@ -63,14 +63,14 @@ class users extends REST_Controller
                 );
 
                 if ($user_id === FALSE)                    
-                    $this->response(array('error' => 'Registro incorrecto'), 404); 
+                    $this->response(array('res' => 'error'), 404); 
                 else
                 {
-                    $this->response(array('success' => 'Registro correcto'), 200);                   
+                    $this->response(array('res' => 'ok','data'=>$user_id), 200);                   
                 }
                
             }else{
-                $this->response(array('error' => 'Parámetros incorrectos'), 400);
+                $this->response(array('res' => 'error','data'=>'Parámetros incorrectos'), 400);
             }
 
         }elseif($tipo&&intval($tipo)==2){

@@ -12,7 +12,7 @@ class puntaje_cualidad_model extends CI_Model
 	}
 
 	public function get_puntaje($data)
-	{	$procedure="call sp_ingreso_puntaje(?,?,?,?)";
+	{	$procedure="call sp_ingreso_puntaje(?,?,?)";
 		$result = $this->db->query($procedure,$data);
 		return $result -> result_array();
 	}
