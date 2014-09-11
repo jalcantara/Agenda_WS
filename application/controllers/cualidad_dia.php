@@ -10,7 +10,7 @@ class cualidad_dia extends REST_Controller
     public function cualidades_dia_get()
     {
         $this->load->model('cualidad_dia_model','cm');
-        $fecha=$this->get("fecha");
+        $fecha=$this->get("fecha");   
         $cualidad_dia = $this->cm->get_lista_cualidaddia_all($fecha);
 
         
