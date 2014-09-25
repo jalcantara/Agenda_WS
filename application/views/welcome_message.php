@@ -63,6 +63,7 @@ code {
 	<li><a href="<?php echo base_url();?>reserva/reserva_libro/usuario/1/libro/5/format/json">Click </a>Reserva de Libro</li>
 
 	<li><a href="<?php echo base_url();?>multimedia/lista_multimedia_bycualidadtipo/cualidad/1/tipo/1/format/json">Click </a>Lista multimedia por cualidad y tipo</li>
+	<li><a href="<?php echo base_url();?>multimedia/multimedia_byid/id/1/format/json">Click </a>Descripción de multimedia</li>
 
 </ul>
 <p><br />Page rendered in {elapsed_time} seconds</p>

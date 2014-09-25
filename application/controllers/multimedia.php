@@ -25,4 +25,21 @@ class multimedia extends REST_Controller
         }
     }  
 
+    public function multimedia_byid_get()
+    {
+        $this->load->model('multimedia_model','mm');
+        $multimedia_id = $this->get('id');
+        $cualidad_libro = $this->mm->get_multimedia_byid($multimedia_id);
+        
+        if($cualidad_libro)
+        {
+            $this->response($cualidad_libro, 200); // 200 being the HTTP response code
+        }
+
+        else
+        {
+            $this->response(array('res' => 'error'), 404);
+        }
+    }    
+
 }
