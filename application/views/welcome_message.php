@@ -61,6 +61,9 @@ code {
 	<li><a href="<?php echo base_url();?>libro/libro_byid/id/8/format/json">Click </a>Descripción de libro por ID</li>
 	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje/fecha/01-01-2015/usuario/1/puntaje/100/cualidad/9/format/json">Click </a>Puntaje Cualidad con procedimiento y vuelta de data</li>
 	<li><a href="<?php echo base_url();?>reserva/reserva_libro/usuario/1/libro/5/format/json">Click </a>Reserva de Libro</li>
+
+	<li><a href="<?php echo base_url();?>multimedia/lista_multimedia_bycualidadtipo/cualidad/1/tipo/1/format/json">Click </a>Lista multimedia por cualidad y tipo</li>
+
 </ul>
 <p><br />Page rendered in {elapsed_time} seconds</p>
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
