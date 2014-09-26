@@ -11,10 +11,11 @@ class users_model extends CI_Model
 		parent::__construct();
 	}
 
-	public function get_login($user,$pass)
+	public function set_user_social($data)
 	{
-		//$query = $this ->db->query ('select * from get_lista_cualidad_all;');
-		//return $query -> result_array();
+		$procedure="call sp_registro_usuario(?,?,?,?,?,?)";
+		$result = $this->db->query($procedure,$data);
+		return $result -> result_array();
 	}
 }
  ?>

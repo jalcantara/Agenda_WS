@@ -31,6 +31,25 @@ class puntaje_cualidad extends REST_Controller
         {
             $this->response(array('res' => 'error'), 404);
         }
-    }  
+    } 
+    public function puntaje_all_get()
+    {
+        $this->load->model('puntaje_cualidad_model','pc');
+        
+        $anio = $this->get('anio');
+        $usuario = $this->get('usuario');
+        $data = array('usuario_id' => $usuario);
+        
+       $result = $this->pc->get_puntaje_all($data);
+        
+        if($result)
+        {
+            $this->response($result, 200);
+        }
+        else
+        {
+            $this->response(array('res' => 'error'), 404);
+        }
+    }
 
 }

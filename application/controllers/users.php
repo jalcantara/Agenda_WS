@@ -78,6 +78,46 @@ class users extends REST_Controller
         }       
     }
 
+    function create_user_social_post()
+    {
+        $username=$this->post('username');
+        $password=$this->post('password');
+        $email=$this->post('email');
+        $firstname=$this->post('firstname');
+        $lastname=$this->post('lastname');
+        $ip=$this->post('ip');
+        $tipo=$this->post('tipo');
+
+        if($tipo&&intval($tipo)==1){
+            if($username&&$password&&$email&&$firstname&&$lastname&&$ip){
+                $this->load->model('users_model','um');
+
+                $data = array(
+                            'username' => $username,
+                            'password' => $password,
+                            'email' => $email,
+                            'firstname' => $firstname,
+                            'lastname' => $lastname,
+                            'ip' => $ip);
+                $usuario_id = $this->um->set_user_social($data);
+        
+                if($usuario_id)
+                {
+                    $this->response(array('res' => 'ok','data'=>$usuario_id), 200); // 200 being the HTTP response code
+                }
+                else
+                {
+                    $this->response(array('res' => 'error'), 404); 
+                }
+            }else{
+                $this->response(array('res' => 'error','data'=>'Parámetros incorrectos'), 400);
+            }
+
+        }elseif($tipo&&intval($tipo)==2){
+            //Case si fuera WEB
+        }       
+    }
+
     public function logout()
     {
         $this->data['title'] = "Logout";

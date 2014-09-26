@@ -23,5 +23,11 @@ class puntaje_cualidad_model extends CI_Model
 			return true;
 		}
 	}
+
+	public function get_puntaje_all($data)
+	{	$procedure="call sp_promedio_cualidad(?)";
+		$result = $this->db->query($procedure,$data);
+		return $result -> result_array();
 	}
+}
  ?>

@@ -64,6 +64,7 @@ code {
 
 	<li><a href="<?php echo base_url();?>multimedia/lista_multimedia_bycualidadtipo/cualidad/1/tipo/1/format/json">Click </a>Lista multimedia por cualidad y tipo</li>
 	<li><a href="<?php echo base_url();?>multimedia/multimedia_byid/id/1/format/json">Click </a>Descripción de multimedia</li>
+	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje_all/usuario/1/format/json">Click </a>Puntaje promedio! Un momento...¿De qué año?</li>
 
 </ul>
 <p><br />Page rendered in {elapsed_time} seconds</p>
@@ -89,6 +90,25 @@ code {
 		<input name="password" />
 		<label>Email</label>
 		<input name="email" />
+		<input name="tipo" value="1" hidden/>
+		<button type="submit">Aceptar</button>
+	</form>
+</div>
+<div>
+	<h2>Crear usuario SOCIAL</h2>
+	<form action="<?php echo base_url();?>users/create_user_social/format/json" method='POST'>
+			<label>Usuario</label>
+		<input name="username" />
+			<label>Password</label>
+		<input name="password" />
+			<label>Email</label>
+		<input name="email" />
+			<label>First Name</label>
+		<input name="firstname" />
+			<label>Last Name</label>
+		<input name="lastname" />
+			<label>IP</label>
+		<input name="ip" />
 		<input name="tipo" value="1" hidden/>
 		<button type="submit">Aceptar</button>
 	</form>

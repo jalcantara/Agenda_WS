@@ -15,7 +15,6 @@ class reserva_model extends CI_Model
 	{	$procedure="call sp_ingreso_reserva(?,?)";
 		$result = $this->db->query($procedure,$data);
 		return $result -> result_array();
-	}
-	
+	}	
 }
  ?>
