@@ -15,7 +15,7 @@ class users_model extends CI_Model
 	{
 		$procedure="call sp_registro_usuario(?,?,?,?,?,?)";
 		$result = $this->db->query($procedure,$data);
-		return $result -> result_array();
+		return $result -> row_array();
 	}
 }
  ?>

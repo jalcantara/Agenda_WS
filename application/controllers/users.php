@@ -99,11 +99,10 @@ class users extends REST_Controller
                             'firstname' => $firstname,
                             'lastname' => $lastname,
                             'ip' => $ip);
-                $usuario_id = $this->um->set_user_social($data);
-        
+                $usuario_id = $this->um->set_user_social($data);                
                 if($usuario_id)
                 {
-                    $this->response(array('res' => 'ok','data'=>$usuario_id), 200); // 200 being the HTTP response code
+                    $this->response(array('res' => 'ok','data'=>$usuario_id['id']), 200); // 200 being the HTTP response code
                 }
                 else
                 {
