@@ -14,10 +14,10 @@ class cualidad extends REST_Controller
         
         if($cualidad)
         {
-           /*$this->output
+           $this->output
             ->set_content_type('application/json')
-            ->set_output(json_encode($cualidad));  */
-            $this->response($cualidad, 200); // 200 being the HTTP response code
+            ->set_output(json_encode($cualidad)); 
+            //$this->response($cualidad, 200); // 200 being the HTTP response code
         }
 
         else
