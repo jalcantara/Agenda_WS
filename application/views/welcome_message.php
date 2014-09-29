@@ -52,20 +52,17 @@ code {
 <ul>
 	<li><a href="<?php echo base_url();?>cualidad/cualidades/format/json">Click </a>Lista de Cualidades</li>
 	
-	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia/fecha/01-01/format/json">Click </a>Cualidad del Día 01/01 dd/MM</li>
+	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia/fecha/01-01-2015/format/json">Click </a>Cualidad del Día 01/01/2015</li>
 
-	<li><a href="<?php echo base_url();?>cualidad_dia/pensamiento/fecha/01-01/format/json">Click </a>Pensamiento del día 01/01 dd/MM</li>
-
-	<li><a href="<?php echo base_url();?>cualidad_libro/lista_libro_bycualidad/id/1/format/json">Click </a>Lista de libros por cualidad</li>
+	<li><a href="<?php echo base_url();?>cualidad_dia/pensamiento/fecha/01-01-2015/format/json">Click </a>Pensamiento del día 01/01/2015</li>
 	
-	<li><a href="<?php echo base_url();?>libro/libro_byid/id/8/format/json">Click </a>Descripción de libro por ID</li>
 	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje/fecha/01-01-2015/usuario/1/puntaje/100/cualidad/9/format/json">Click </a>Puntaje Cualidad con procedimiento y vuelta de data</li>
-	<li><a href="<?php echo base_url();?>reserva/reserva_libro/usuario/1/libro/5/format/json">Click </a>Reserva de Libro</li>
-
 	<li><a href="<?php echo base_url();?>multimedia/lista_multimedia_bycualidadtipo/cualidad/1/tipo/1/format/json">Click </a>Lista multimedia por cualidad y tipo</li>
 	<li><a href="<?php echo base_url();?>multimedia/multimedia_byid/id/1/format/json">Click </a>Descripción de multimedia</li>
 	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje_all/usuario/1/format/json">Click </a>Puntaje promedio! Un momento...¿De qué año?</li>
-
+<li><a href="<?php echo base_url();?>libro/libro_byid/id/8/format/json">Click </a>{Obsoleto} Descripción de libro por ID </li>
+<li><a href="<?php echo base_url();?>reserva/reserva_libro/usuario/1/libro/5/format/json">Click </a>{Obsoleto} Reserva de Libro</li>
+<li><a href="<?php echo base_url();?>cualidad_libro/lista_libro_bycualidad/id/1/format/json">Click </a>{Obsoleto} Lista de libros por cualidad</li>
 </ul>
 <p><br />Page rendered in {elapsed_time} seconds</p>
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
