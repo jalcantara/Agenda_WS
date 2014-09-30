@@ -13,7 +13,7 @@ class users_model extends CI_Model
 
 	public function set_user_social($data)
 	{
-		$procedure="call sp_registro_usuario(?,?,?,?,?)";
+		$procedure="call sp_registro_usuario(?,?,?,?)";
 		$result = $this->db->query($procedure,$data);
 		return $result -> row_array();
 	}

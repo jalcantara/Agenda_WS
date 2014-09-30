@@ -14,8 +14,7 @@ class users extends REST_Controller
     
     public function login_post()
     {
-        $this->load->model('users_model','us');
-        
+        $this->load->model('users_model','us');        
         $username=$this->post('username');
         $password=$this->post('password');
         $tipo=$this->post('tipo');
@@ -80,19 +79,17 @@ class users extends REST_Controller
     function create_user_social_post()
     {
         $username=$this->post('username');
-        $password=$this->post('password');
         $email=$this->post('email');
         $firstname=$this->post('firstname');
         $lastname=$this->post('lastname');
         $tipo=$this->post('tipo');
 
         if($tipo&&intval($tipo)==1){
-            if($username&&$password&&$email&&$firstname&&$lastname){
+            if($username&&$email&&$firstname&&$lastname){
                 $this->load->model('users_model','um');
 
                 $data = array(
                             'username' => $username,
-                            'password' => $password,
                             'email' => $email,
                             'firstname' => $firstname,
                             'lastname' => $lastname);

@@ -98,9 +98,7 @@ code {
 	<h2>Crear usuario SOCIAL</h2>
 	<form action="<?php echo base_url();?>users/create_user_social/format/json" method='POST'>
 			<label>Usuario</label>
-		<input name="username" />
-			<label>Password</label>
-		<input name="password" />
+		<input name="username" />			
 			<label>Email</label>
 		<input name="email" />
 			<label>First Name</label>
