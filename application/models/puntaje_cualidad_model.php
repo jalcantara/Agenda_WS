@@ -25,7 +25,7 @@ class puntaje_cualidad_model extends CI_Model
 	}
 
 	public function get_puntaje_all($data)
-	{	$procedure="call sp_promedio_cualidad(?)";
+	{	$procedure="call sp_promedio_cualidad(?,?)";
 		$result = $this->db->query($procedure,$data);
 		return $result -> result_array();
 	}

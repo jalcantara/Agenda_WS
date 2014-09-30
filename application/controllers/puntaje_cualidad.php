@@ -38,7 +38,7 @@ class puntaje_cualidad extends REST_Controller
         
         $anio = $this->get('anio');
         $usuario = $this->get('usuario');
-        $data = array('usuario_id' => $usuario);
+        $data = array('usuario_id' => $usuario,'anio'=>$anio);
         
        $result = $this->pc->get_puntaje_all($data);
         
