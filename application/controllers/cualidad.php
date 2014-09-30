@@ -17,7 +17,6 @@ class cualidad extends REST_Controller
         {            
             $this->response($cualidad, 200);
         }
-
         else
         {
 
