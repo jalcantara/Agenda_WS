@@ -16,12 +16,12 @@ class cualidad_dia extends REST_Controller
         
         if($cualidad_dia)
         {
-            $this->response($cualidad_dia, 200); // 200 being the HTTP response code
+            $this->response($cualidad_dia, 200);
         }
 
         else
         {
-            $this->response(array('error' => 'Couldn\'t find any cualidad_dia!'), 404);
+            $this->response(array('error' => '¡Error al cargar la cualidad, versículo,.. por fecha!'), 404);
         }
     }
 
@@ -34,12 +34,12 @@ class cualidad_dia extends REST_Controller
         
         if($pensamiento)
         {
-            $this->response($pensamiento, 200); // 200 being the HTTP response code
+            $this->response($pensamiento, 200);
         }
 
         else
         {
-            $this->response(array('error' => 'Couldn\'t find any pensamiento!'), 404);
+            $this->response(array('error' => '¡Error al cargar pensamiento!'), 404);
         }
     }
 

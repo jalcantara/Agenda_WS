@@ -11,9 +11,9 @@ class cualidad_model extends CI_Model
 		parent::__construct();
 	}
 
-	public function get_lista_cualidad_all()
+	public function get_lista_cualidad_all($anio)
 	{
-		$query = $this ->db->query ('select * from get_lista_cualidad_all;');
+		$query = $this ->db->query ('select id,cualidad,mes from get_lista_cualidad_all where anio='.$anio);
 		return $query -> result_array();
 	}
 }

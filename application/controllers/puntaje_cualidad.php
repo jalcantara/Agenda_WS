@@ -17,6 +17,7 @@ class puntaje_cualidad extends REST_Controller
         $usuario = $this->get('usuario');
         $puntaje = $this->get('puntaje');
         $cualidad_id = $this->get('cualidad');
+
         $data = array(
             'dat_fecha' => $fecha, 
             'usuario_id' => $usuario,
@@ -49,7 +50,7 @@ class puntaje_cualidad extends REST_Controller
         else
         {
             $this->response(array('res' => 'error'), 404);
-        }
-    }
+        }    
+    }    
 
 }

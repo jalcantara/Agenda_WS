@@ -21,12 +21,12 @@ class reserva extends REST_Controller
         
         if($reserva)
         {
-            $this->response($reserva, 200); // 200 being the HTTP response code
+            $this->response($reserva, 200);
         }
 
         else
         {
-            $this->response(array('error' => 'Couldn\'t find any reserva!'), 404);
+            $this->response('error' => '¡Error al realizar reserva!'), 404);
         }
     } 
 }

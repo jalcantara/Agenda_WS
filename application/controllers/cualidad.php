@@ -10,20 +10,18 @@ class cualidad extends REST_Controller
     public function cualidades_get()
     {
         $this->load->model('cualidad_model','cm');
-        $cualidad = $this->cm->get_lista_cualidad_all();
+        $anio=$this->get("anio");
+        $cualidad = $this->cm->get_lista_cualidad_all($anio);
         
         if($cualidad)
-        {
-           $this->output
-            ->set_content_type('application/json')
-            ->set_output(json_encode($cualidad)); 
-            //$this->response($cualidad, 200); // 200 being the HTTP response code
+        {            
+            $this->response($cualidad, 200);
         }
 
         else
         {
 
-            $this->response(array('error' => 'Couldn\'t find any cualidad!'), 404);
+            $this->response(array('error' => '¡Error al cargar lista de cualidades!'), 404);            
         }
     }
 

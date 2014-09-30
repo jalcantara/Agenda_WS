@@ -16,7 +16,7 @@ class multimedia extends REST_Controller
         
         if($cualidad_libro)
         {
-            $this->response($cualidad_libro, 200); // 200 being the HTTP response code
+            $this->response($cualidad_libro, 200);
         }
 
         else
@@ -33,7 +33,7 @@ class multimedia extends REST_Controller
         
         if($cualidad_libro)
         {
-            $this->response($cualidad_libro, 200); // 200 being the HTTP response code
+            $this->response($cualidad_libro, 200); 
         }
 
         else

@@ -85,11 +85,10 @@ class users extends REST_Controller
         $email=$this->post('email');
         $firstname=$this->post('firstname');
         $lastname=$this->post('lastname');
-        $ip=$this->post('ip');
         $tipo=$this->post('tipo');
 
         if($tipo&&intval($tipo)==1){
-            if($username&&$password&&$email&&$firstname&&$lastname&&$ip){
+            if($username&&$password&&$email&&$firstname&&$lastname){
                 $this->load->model('users_model','um');
 
                 $data = array(
@@ -97,8 +96,7 @@ class users extends REST_Controller
                             'password' => $password,
                             'email' => $email,
                             'firstname' => $firstname,
-                            'lastname' => $lastname,
-                            'ip' => $ip);
+                            'lastname' => $lastname);
                 $usuario_id = $this->um->set_user_social($data);                
                 if($usuario_id)
                 {
