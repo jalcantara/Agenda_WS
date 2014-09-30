@@ -44,7 +44,6 @@ class users extends REST_Controller
         }       
     }
 
-    //create a new user
     function create_user_post()
     {
 
