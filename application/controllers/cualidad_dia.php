@@ -25,6 +25,24 @@ class cualidad_dia extends REST_Controller
         }
     }
 
+    public function cualidades_dia2_get()
+    {
+        $this->load->model('cualidad_dia_model','cm');
+        $fecha=$this->get("fecha");   
+        $cualidad_dia = $this->cm->get_lista_cualidaddia_all2($fecha);
+
+        
+        if($cualidad_dia)
+        {
+            $this->response($cualidad_dia, 200);
+        }
+
+        else
+        {
+            $this->response(array('error' => '¡Error al cargar la cualidad, versículo,.. por fecha!'), 404);
+        }
+    }
+
     public function pensamiento_get()
     {
         $this->load->model('cualidad_dia_model','cm');

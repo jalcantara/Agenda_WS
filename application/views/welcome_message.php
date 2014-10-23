@@ -62,6 +62,8 @@ code {
 	<li><a href="<?php echo base_url();?>multimedia/multimedia_byid/id/1/format/json">Click </a>Descripción de multimedia</li>
 	<li><a href="<?php echo base_url();?>puntaje_cualidad/puntaje_all/usuario/1/anio/2014/format/json">Click </a>Puntaje promedio! por año</li>
 	<li><a href="<?php echo base_url();?>reserva/reserva_libro/usuario/1/libro/5/format/json">Click </a>{No desarrollado} Reserva de Libro</li>
+
+
 	
 </ul>
 
@@ -110,5 +112,8 @@ code {
 		<button type="submit">Aceptar</button>
 	</form>
 </div>
+<br>
+	<h2>Segunda versón</h2>
+	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia2/fecha/01-01-2015/format/json">Click </a>Cualidad, versículo, pensamiento,... por fecha</li>
 </body>
 </html>
