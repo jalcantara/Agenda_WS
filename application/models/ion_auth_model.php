@@ -803,7 +803,7 @@ class Ion_auth_model extends CI_Model
 		elseif ($this->identity_column == 'username' && $this->username_check($username))
 		{
 			$this->set_error('account_creation_duplicate_username');
-			return FALSE;
+			return 0;
 		}
 
 		// If username is taken, use username1 or username2, etc.

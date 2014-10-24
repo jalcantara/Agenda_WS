@@ -60,15 +60,15 @@ class users extends REST_Controller
                     $email
                 );
 
-                if ($user_id === FALSE)                    
-                    $this->response(array('res' => 'error'), 404); 
+                if ($user_id !== FALSE)        
+                    $this->response(array('res' => 'ok','data' => $user_id), 200);                     
                 else
                 {
-                    $this->response(array('res' => 'ok','data'=>$user_id), 200);                   
+                    $this->response(array('res' => 'error'), 404);                  
                 }
                
             }else{
-                $this->response(array('res' => 'error','data'=>'Parámetros incorrectos'), 400);
+                $this->response(array('res' => 'error', 404));
             }
 
         }elseif($tipo&&intval($tipo)==2){
