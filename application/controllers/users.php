@@ -60,6 +60,39 @@ class users extends REST_Controller
                     $email
                 );
 
+                if ($user_id === FALSE)                    
+                    $this->response(array('res' => 'error'), 404); 
+                else
+                {
+                    $this->response(array('res' => 'ok','data'=>$user_id), 200);                   
+                }
+               
+            }else{
+                $this->response(array('res' => 'error','data'=>'Parámetros incorrectos'), 400);
+            }
+
+        }elseif($tipo&&intval($tipo)==2){
+            //Case si fuera WEB
+        }       
+    }
+
+    function create_user2_post()
+    {
+
+        $username=$this->post('username');
+        $password=$this->post('password');
+        $email=$this->post('email');
+        $tipo=$this->post('tipo');
+
+        if($tipo&&intval($tipo)==1){
+            if($username&&$password&&$email){
+                $user_id = $this->ion_auth->register2
+                (
+                    $username,  
+                    $password, 
+                    $email
+                );
+
                 if ($user_id !== FALSE)        
                     $this->response(array('res' => 'ok','data' => $user_id), 200);                     
                 else

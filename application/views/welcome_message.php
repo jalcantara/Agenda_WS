@@ -24,7 +24,8 @@ h1 {
  color: #444;
  background-color: transparent;
  border-bottom: 1px solid #D0D0D0;
- font-size: 16px;
+ font-size: 32px;
+ color: red;
  font-weight: bold;
  margin: 24px 0 2px 0;
  padding: 5px 0 6px 0;
@@ -113,7 +114,24 @@ code {
 	</form>
 </div>
 <br>
-	<h2>Segunda versón</h2>
+<br>
+<br>
+<hr>
+	<h1>Segunda versón</h1>
 	<li><a href="<?php echo base_url();?>cualidad_dia/cualidades_dia2/fecha/01-01-2015/format/json">Click </a>Cualidad, versículo, pensamiento,... por fecha</li>
+<br>
+<div>
+	<h2>Crear usuario POST - si data=0 => nombre de usuario repetido</h2>
+	<form action="<?php echo base_url();?>users/create_user2/format/json" method='POST'>
+		<label>Usuario</label>
+		<input name="username" />
+		<label>Password</label>
+		<input name="password" />
+		<label>Email</label>
+		<input name="email" />
+		<input name="tipo" value="1" hidden/>
+		<button type="submit">Aceptar</button>
+	</form>
+</div>
 </body>
 </html>
