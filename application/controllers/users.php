@@ -118,8 +118,7 @@ class users extends REST_Controller
         $tipo=$this->post('tipo');
 
         if($tipo&&intval($tipo)==1){
-            //if($username&&$email&&$firstname&&$lastname){
-            if($username&&$email){//por ahora.
+            if($username&&$email&&$firstname&&$lastname){
                 $this->load->model('users_model','um');
 
                 $data = array(
